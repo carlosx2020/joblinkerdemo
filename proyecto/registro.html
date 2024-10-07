@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/176a481ba6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/176a481ba6.js" crossorigin="anonymous"></script>
+    
+<style>
+  .registronew{
+    background-color: #006600;
+  }
+
+
+
+  .titulo{
+    background-color: green;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    font-weight: bold;
+
+}
+h1{
+    color: white;
+    font-size: 45px;
+
+}
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+a:hover{
+    color: aqua;
+}
+.tarjetas{
+    display: flex;
+    justify-content: center;
+
+}
+.pie{
+    background-color: green;
+}
+.pie{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+.descripcion{
+    display: flex;
+    justify-content: center;
+}
+.info{
+    background-color: #006600;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    font-weight: bold;
+
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #009933;
+    margin-bottom: 40px;
+  }
+  
+  .info-section {
+    margin-bottom: 30px;
+  }
+  
+  .info-section h3 {
+    color: #006600;
+    font-size: 24px;
+  }
+  
+  .info-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .info-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  
+  .info-section ul li {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  strong {
+    color: #006600;
+  }
+
+
+  #auth-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .auth-container {
+    width: 40%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #009933;
+    margin-bottom: 40px;
+  }
+  
+  .form-container form {
+    margin-bottom: 30px;
+  }
+  
+  form h3 {
+    color: #006600;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="email"],
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #009933;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #007a29;
+  }
+  
+  .switch {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .switch a {
+    color: #009933;
+    text-decoration: none;
+  }
+  
+  .switch a:hover {
+    text-decoration: underline;
+  }
+  .siguiente{
+    display: block;
+    width: 50px;
+    background-color: #006600;
+    border-radius: 10px;
+    padding: 15px 50px;
+    margin: 19px;
+  }
+
+ 
+</style>
+</head>
+
+<body>
+    <header class="registronew">
+        <nav>
+            <h1>JobLinker</h1>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="infoa.html">INFORMACION ADICIONAL</a></li>
+                <li><a href="registro.html">REGISTRATE O INICIE SESION</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    <section id="auth-section">
+        <div class="auth-container">
+          <h2>Registrarse o Iniciar Sesión</h2>
+      
+          <div class="form-container">
+            <form action="#" method="POST" id="login-form">
+              <h3>Iniciar Sesión</h3>
+      
+              <label for="email-login">Correo Electrónico</label>
+              <input type="email" id="email-login" name="email-login" required>
+      
+              <label for="password-login">Contraseña</label>
+              <input type="password" id="password-login" name="password-login" required>
+      
+              <button type="submit">Iniciar Sesión</button>
+      
+              <p class="switch">¿No tienes cuenta? <a href="personal.html">Regístrate aquí</a></p>
+            </form>
+      
+           
+              
+            </form>
+          </div>
+        </div>
+      </section>
+#piedepagina
+      <footer>
+    
+        <div class="pie">
+            <p>&copy; 2024 Todos los derechos reservados.</p>
+          <a href="">Política de Privacidad</a> | 
+          <a href="">Términos de Servicio</a> | 
+          <a href="">Contacto</a>
+        </div>
+      </footer>
+      
+      
+    
+</body>
+</html>
