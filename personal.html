@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joblinker - Registro</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Formulario */
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+
+@media (max-width: 400px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="register-form">
+            <h2>Regístrate en Joblinker</h2>
+
+            <form id="registerForm">
+                
+                <label for="userType">¿Eres trabajador o cliente?</label>
+                <select id="userType" name="userType">
+                    <option value="trabajador">Trabajador</option>
+                    <option value="cliente">Cliente</option>
+                </select>
+
+                
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" placeholder="Crea una contraseña" required>
+
+                
+                <div id="trabajadorSection" style="display: none;">
+                    <label for="titleStatus">¿Tienes título formal?</label>
+                    <select id="titleStatus" name="titleStatus">
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+
+                    <label for="skills">Especialidades o habilidades:</label>
+                    <input type="text" id="skills" name="skills" placeholder="Describe tus habilidades o especialidades">
+
+                    <label for="portfolio">Portafolio (opcional):</label>
+                    <input type="file" id="portfolio" name="portfolio">
+                </div>
+
+                
+                
+                
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+   
+</body>
+</html>
